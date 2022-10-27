@@ -1,0 +1,214 @@
+<!-- 
+        Block content (Div) 
+        * action
+        * method (GET - Padrão)
+    -->
+
+<!-- <form action="" method="post">
+    <fieldset name="Contato">
+        <legend>Preencha o formulário de contato</legend>
+    </fieldset> -->
+
+    <!-- Button -->
+    <!-- <button type="">Enviar</button> -->
+
+    <!-- Labe 
+    * Associa e identifica uma ou mais tags de entrada de dados
+    * Ajuda na acessibilidade 
+        
+        Atributos:
+            - For
+                * Usado para fazer a conexão com outros elementos de formulário
+                -->
+    <!-- 
+    <label>
+        Nome:
+        <input type="text" id="nome"> <br>
+    </label>
+
+    <label for="age">Idade:</label>
+    <input type="number" id="age"> -->
+
+
+    <!-- 
+        <datelist>
+        * Lista de valores com sugestões para algum elemnto input
+        * Usuário poderar selecionar um dos valores ou colocar novos valores
+     -->
+
+    <!-- <datalist id="prof-list">
+        <option>Luan</option>
+        <option>Jenifer</option>
+        <option>Regis</option>
+    </datalist>
+
+    <input type="text" list="prof-list" placeholder="Prof Selection"
+        style="background-color: black; font-weight: 600; "> -->
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Trabalhando com inputs</legend>
+
+        <!-- Input de texto -->
+
+        <!-- <input 
+        type="text"
+        placeholder="Preenhca o seu nome"
+        size="60"
+        minlength="8"
+        maxlength="20"
+        > <br> -->
+
+         <!-- Input de number -->
+
+         <!-- <input 
+         type="number"
+         size="50"
+         minlength="8"
+         maxlength="20" 
+         > <br> -->
+
+         <!-- Input de email -->
+
+         <!-- <input 
+         type="email"
+         size="30" 
+         > <br> -->
+
+         <!-- Input de password -->
+
+         <!-- <input 
+         type="password"
+         size="30" 
+         title="Sua senha precisa ser em Hexdecimal"
+         pattern="[0-9a-fA-F]{4,8}"
+         required
+         inputmode="numeric"
+
+         > <br> -->
+
+         <!-- Input de hiden -->
+
+         <!-- <input 
+         type="hidden" value="Eu estou escondido"
+         size="30" 
+         >  -->
+
+         <!-- Input de color -->
+
+         <!-- <input 
+         type="color"
+         size="30" 
+         > <br> -->
+
+         <!-- Input de date-time 
+               Utiliza medidas em tempo como mês, data, ano e hora
+             -->
+
+         <!-- <input 
+         type="date" 
+         > <br> -->
+
+         <!-- <label for="area">
+            Seu interesse maior é por qual área?
+        </label><br><br>
+
+        <div>
+            <input type="checkbox" 
+            name="interesse"
+            id="frontend"
+            value="Front-End Luan Monteiro" > 
+            <label for="frontend">Front-End Luan Monteiro </label>
+            <br>
+
+            <input type="checkbox"
+            name="interesse"
+            id="backend" 
+            value="Back-End Regis Santos"> 
+            <label for="backend">Back-End Regis Santos </label>
+            <br>
+
+            <input type="checkbox" 
+            name="interesse"
+            id="designeruiux"
+            value="Design UI/UX Jenifer Vieira <br>"> 
+            <label for="designeruiux">Design UI/UX Jenifer Vieira </label>
+            <br>
+        </div>
+
+        <br>
+        <br>
+        <br> -->
+
+        <!-- Interesse = font-end Luan Monteiro, Back-End = Regis Santos .... -->
+
+
+        <!-- Radio button  -->
+        <!-- <h3>Deseja receber notificação da be.academy</h3>
+        <label for="yes">Sim</label>
+        <input type="radio" name="notification" id="yes">
+
+        <label for="no">Não</label>
+        <input type="radio" name="notification" id="no">
+        <br> -->
+
+        <!-- SELECT
+         
+            Elemento de formulário capaz de criar uma lista de opções 
+            a serem selecionadas, (DropDown) -->
+            <label for="teacher">Professores: </label>
+            <select name="select-teacher" id="teacher">
+                <option >Selecione um professor</option>
+                <option value="Luan Santos">Luan Santos</option>
+                <option value="Moacir Garcia">Moacir Garcia</option>
+                <option value="Jenifer Vieira">Jenifer Vieira</option>
+                <option value="Regis Eduardo">Regis Eduardo</option>
+            </select>
+            <br>
+         
+            <!-- Input Search 
+
+            * Elemento usado para pesquisar contúdo
+            * Parecido com o campo de texto e pode receber atributos e comportamentos 
+        -->
+
+        <br>
+        <input type="search" 
+        name="" 
+        id="" 
+        placeholder="Busque o usuário pelo Id" 
+        size="24"
+        pattern="[0-9]{0,3}"
+        title="Busque por o id de até 3 digitos"
+        >
+        <br>
+        <br>
+
+        <!-- Manipulando arquivos com file 
+
+            * O usuário poderá fazer um upload de um ou mais arquivos de 
+                acordo com a extensão.
+                accept=".pdf" É ONDE INFORMAMOS PARA O PROGRAMA QUAIS EXTENSÕES DE 
+                ARQUIVOS O file PODE CARRERGAR, PODENDO SER UTILIZADO MULTPILAS EXTENSÕES 
+                E MULTIPLOS ARQUIVOS COM O multiple.
+                OBS. TEMOS QUE INFORMAR AO NOSSO FORMULÁRIO QUE IREMOS CARREGAR MULTIPLOS ARQUIVOS.
+                Ex: form action="" method="post" enctype="multipart/form-data">
+            -->
+
+            <input
+             type="file" 
+             value=""
+             accept="image/*"
+             multiple
+             >
+
+
+                 
+         <br>
+         <br>
+         <br>
+         <button type="submit">Enviar</button>
+         
+    </fieldset>
+</form>

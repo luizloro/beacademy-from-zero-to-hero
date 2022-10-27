@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <!-- 
+    A Propriedade position especifica o tipo de método de posicionamento usado para
+    um elemento (static, fixed, absolute ou sticky).
+
+    PRORPIEDADE DE POSIÇÃO
+
+    A propriedade "position" especifica o tipo de método de posicionamento 
+    usado para um elemento.
+
+    Existem cinto valores de posições diferentes:
+
+    * static
+    * relative (Desconecta o objeto do local, mas a posição do objeto nnão pode ser ocupada)
+    * fixed    (O objeto se mantem fixo na tela, mesmo que você venha a scrolar a mesma)
+    * absolute (Funciona de acordo com o pai, que precisa está postion:relativo )
+    * sticky
+
+    Os elementos são então posicionados usando as propriedades superio, inferior,
+    esquerda e direita. No entanto, essas propriedades não funcionarão a menos que a 
+    propriedade position seja definida primeiro. Eles também funcionam de forma
+    diferente dependendo do valor da posição.
+
+    Exemplo:
+
+    .box {
+        position: relative;
+        top:
+        left:
+        right:
+        bottom:
+        z-index:
+    }
+     -->
+
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .box-1 {
+            background: red;
+            position: absolute;
+            left: 5px;
+            top: 10px;
+
+
+
+        }
+
+        .box-2 {
+            background: green;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            
+
+        }
+
+        .box-3 {
+            background: blue;
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+
+
+</body>
+
+</html>

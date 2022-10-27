@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+
+    <style>
+        /* Descendent Combinator 
+            Identificado por um espeço entre os seletore.
+            - Busca um elemento dentro de outro 
+            Exemplo abaixo:  */
+
+        /* body ul li {
+            background: green;
+            color: red;
+        }
+
+        body section ul li {
+            background: blue;
+            color: yellowgreen
+        } */
+
+        /* Chil Combinator 
+            Identificado pelo sinal > entre dois seletores
+            - Seleciona somente o elemento filho direto do pai
+            - Elementos depois do filho direto serão desconsiderados   
+            Exemplo abaixo: 
+        */
+        /* body> ul {
+            background-color: red;
+        }
+
+        div>ul {
+            background: blue;
+        } */
+
+            /* Adjacent sibling combinator
+        Identidicado pelo sinal + entre dois elementos
+        -Busca somente o elemnto do lado direito que é irmão direto da hierarquia
+         */
+        /* Utizando o sinal de (+) ele pega o PRIMEIRO irmão após o irmão informado e modifica
+        Utizando o sinal de (~) ele pega o TODOS irmão após o irmão informado e modifica 
+            Exemplo abaixo: 
+            */
+        /* h1  + p {
+            color: blue;
+        }
+
+        h1  ~ p {
+            color: blue;
+        } */
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div>
+        <p>Teste</p>
+    </div>
+    <ul>
+        <li>Testando combinadores</li>
+    </ul>
+
+    <section>
+        <div>Outro formato</div>
+        <div>
+            <ul>
+                <li>Outro marcador</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <h1>Titulos</h1>
+    <P>Mais um paragrafo</P>
+
+    <button>Enviar</button>
+
+    <p>Outro paragrafo</p>
+
+</body>
+
+</html>

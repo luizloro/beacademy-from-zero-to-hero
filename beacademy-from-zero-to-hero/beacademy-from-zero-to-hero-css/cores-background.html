@@ -1,0 +1,104 @@
+<!-- 
+
+    Trabalhando com cores
+
+    *** Onde posso mudar cores no CSS ***
+
+    - background-color (Para caixas)
+    - color (Para textos)
+    - border-color (Para borda de caixas)
+    - entre outros
+
+    * Quais são os valores para atribuir ?
+
+    - palavras (blue, white, transparent)
+    - valores em hexadecimal (#fff321)
+    - Funções: rgb, hsl, rgba, hsla
+
+    Anatomia
+
+    Hexadecimal 
+    #FF0000 (2 primeiros digitos RED)
+    #00FF00 (2 próximos digitos GREEN)
+    #0000FF (2 últimos digitos BLUE)
+
+    RGB 
+
+    rgb(255,0,0) - RED
+    rgb(0,255,0) - GREEN
+    rgb(0,0,255) - BLUE
+
+    RGBA 
+
+    rgba(255,0,0,0.3) - RED Opacity (Opacidade)
+    rgba(0,255,0,0.3) - GREEN Opacity (Opacidade)
+    rgba(0,0,255,0.3) - BLUE Opacity (Opacidade)
+
+    HSL 
+
+    hsl (hue, saturation, lightness)
+    hue -> Define um grau de cores (de 0 a 360) - 0 ou 360 é vemelho, 120 é verde, 240 é azul
+    saturation -> Define saturação; 0% é um tom de cinza e 100% é a cor total (saturação total)
+    lightness -> Define a leveza, 0% é preto, 50% é normal e 100% é branco 
+
+    hsl(360,100%,50%) - Vermelho Normal
+    hsl(360,100%,75%) - Vermelho Claro
+    hsl(360,100%,25%) - Vermelho Escuro
+    hsl(360,40%,70%) - Vermelho Pastel
+
+    hsla (hue, saturation, lightness, alpha)
+    alpha -> Define a opacidade como um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco)
+
+    hsla(360,100%,50%,0.3) Vermelho noraml com OPACIDADE
+
+     -->
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background and Color</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: 0;                    
+            }
+
+            .bg-box{
+                width: 600px;
+                height: 600px;
+                border: 8px #000 dotted ;
+                /*shorthand*/
+                background-color: #ff12ff;
+                padding: 16px;
+
+                /*Imagem de fundo*/
+                background-image: url("../html-form-zero-to-hero/img/james.png");
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-origin: content-box;
+                background: radial-gradient(rgba(0,90,0,1), rgba(0,90,0,0.5));
+                /* background-attachment: fixed; (Utiliza o mesmo conceito de fixa na página)*/
+
+                /* SUPER COMBO - Shorthand */
+                background: radial-gradient(rgba(0,90,0,1), rgba(0,90,0,0.5)),
+                url("../html-form-zero-to-hero/img/james.png") no-repeat center center / 50% content-box 
+            }
+
+        </style>
+
+     </head>
+     <body>
+
+        <div class="container">
+            <div class="bg-box"></div>
+            <h1>Testando Backgrounds</h1>
+        </div>
+        
+     </body>
+     </html>

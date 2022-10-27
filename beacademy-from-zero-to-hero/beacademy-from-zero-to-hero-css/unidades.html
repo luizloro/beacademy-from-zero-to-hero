@@ -1,0 +1,156 @@
+<!-- 
+    Interger - número inteiro como -10 ou 223
+
+    number - número decimal como -2,4 64 ou 0.234 
+
+    dimension - é um <number> com uma unidade de medida junto: 90deg, 2s, 8px
+
+    percertagem - representa uma fração de outro número: 50%
+
+    length - é um dos mais usados no CSS e represenra um valor de distância: px, en, vw
+
+    angle - representa um ângulo: deg, rad, turn
+                                    grau, radiano (1 circulo tem 2rad), turno (1 circulo -1turno)
+    
+    time - representa um tempo: s, ms
+    
+    resolution - representa resoluções para dispositivos: dpi (quase NUNCA uitilizado)
+
+    
+    --- Distâncias absolutas <length> ---
+    São fixas e não alteram seu valor.
+
+    | Unidade  | Relativo a           | Equivalência         |
+    |----------|----------------------|----------------------|
+    |   cm     | Centimetros          | 1cm = 96px / 2.54    |
+    |   in     | Inches (Polegadas)   | 1in = 2.54cm = 96px  |
+    |   px     | Pixels               | 1px = 1/96th of lin  |
+            
+    * o mais comum e mais utilizado é o px
+    * não é recomendado usar cm
+
+   --- Distâncias relativas ---
+    São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho
+    Benefício: Maior adaptação aos diferentes tipos de tela
+
+    | Unidade  | Relativo a                                |
+    |----------|-----------------------------------------------|
+    |   em      | Tamanho da font do elemento pai              |
+    |   rem     | Tamanho da font do elemento raiz (root/html) |
+    |   vw      | 1% da viewport width (Área util do body)     |
+    |   vh      | 1% da viewport height (Área util do body)    |
+
+    Exemplo:
+        
+        :root {
+            font-size: 18px
+        }
+
+        OU
+
+        html {
+            font-size: 18px
+        }
+
+         -->
+    
+    <!-- 
+        Dica do PROFESSOR 1:
+
+        Quando trabalhamos com designs responsivos, ou seja, layouts flexiveis
+        que se adaptam para qualqur tipo de tela, é interessante utilizar unidade REM.
+
+        Use agent (Browser), boa parte deles, usam o font-size: 16px
+
+        Como converter PX para REM
+        valor em px / valor da font user agent
+
+        Ex: 32px * 16px = 2rem
+
+        Dica do PROFESSOR 2:
+
+        Outra possibilidade é mudar a configuração do user agent de 16px para 10px, usando % e
+        utilizando a regra de 3 na matematica, desta forma conseguimos cravar a unidade rem.
+
+        Transformar o user agent de 16px para 10px em %
+
+        User Agent = 16px = 100%
+
+        10*100 = 1000
+        1000/16 = 62,6%
+
+        :root{
+            font-size: 62.5%
+        }
+    
+    -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de medida</title>
+
+    <style>
+        /* :root{
+            font-size: 18px;
+        } */
+        /*
+        .text-box {
+            Exemplo utilizando REM
+
+            font-size: 1.4rem; 26px
+            margin-top: 1.7rem; 32px
+            background: red;
+            
+            Exemplo utilizando EM
+
+            font-size: 0.5em;
+
+        }
+        .card{
+            font-size: 48px;
+        }
+        */
+ s
+        :root{
+            font-size: 62.5%;
+        }
+
+        h2{
+            font-size: 2.4rem;
+            margin-bottom: 6.4rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            margin-top: 3.2rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <article>
+                <div class="card">
+                    <h2>Artigo sobre unidades</h2>
+                    <p class="text-box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea maxime ipsam neque nihil
+                        necessitatibus voluptatum, ex praesentium. Culpa, consequatur. Veniam, voluptates totam? Rerum
+                        ipsa quam et impedit in necessitatibus doloremque?</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

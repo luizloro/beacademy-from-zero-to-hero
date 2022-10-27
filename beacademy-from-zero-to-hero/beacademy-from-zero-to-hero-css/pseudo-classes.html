@@ -1,0 +1,102 @@
+<!-- 
+
+*** PSEUDO-CLASSE ***
+
+Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado
+especial do elemento selecionado. Por exempli, :hover pode ser usado para alterar a cor de um
+botão quando o usuário passa o cursor sobre ele.
+
+Documentação: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+
+** SELECIONANDO ELEMENTOS COM PSEUDO-CLASSES **
+
+:first-child => REALIZA A ALTERAÇÃO NA PRIMEIRA INSTÂNCIA DO FILHO 
+
+:nth-of-type() => REALIZA AS ALTERAÇÕES COM O INDICE DESEJADO DENTRO DO CONTEXTO APLICADO 
+Ex: 
+  body p:nth-of-type(3){
+    color: red;
+    
+}
+
+:nth-child) => BUSCA NO CONTEXTO GERAL DO PAI 
+Ex: 
+  body p:nth-child(3){
+    color: blue;
+    
+}
+
+:nth-child(even) => REALIZA ALTERAÇÃO NOS INDICES PARES
+Ex:
+  ul li:nth-child(even){
+    background-color: red;
+    color: white;
+}
+
+
+:nth-child(odd) => REALIZA ALTERAÇÃO NOS INDICES IMPARES
+Ex:
+  ul li:nth-child(odd){
+    background-color: green;
+    color: white;
+}
+
+** Ações do usuário **
+
+:hover - Quando o usuário passa o cursor por cima do elemento
+:focus - Quando o usuário da um foco no elemento
+
+** Atributos **
+
+Podemos utilizar o melhor em formulários
+
+:disable
+:required
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <form>
+    <input 
+    type="text"
+    name="number1"
+    is="number1"
+    placeholder="Informe o número 1"
+    >
+
+    <br>
+
+    <input 
+    type="text"
+    name="number2"
+    is="number2"
+    disabled
+    placeholder="Informe o número 2"
+    >
+
+    <br><br>
+    <button class="btn-submit">Enviar</button>
+
+  </form>
+
+</body>
+
+</html>

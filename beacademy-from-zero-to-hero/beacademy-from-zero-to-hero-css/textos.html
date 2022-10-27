@@ -1,0 +1,89 @@
+<!-- 
+
+    Trabalhando com textos
+
+    Tipografia:
+    - Tamanho
+    - Estilo
+    - Força
+
+    Básico de propriedades de fonte
+
+    * font-family - Tipo de fonte do elemento, padrão Sans-serif
+    * font-weigth - Peso da fonte, 400 ,500 ,700 bold 
+    * font-style - normal, italic, oblique, none
+    * font-size - tamanho da fonte, px, em, rem, %
+    * font-variant - normal, small-caps
+    * font-stretch - 
+    Nem todas as fonts dão suporte a está propriedade
+    permite manipular caracteres - condensed, normal, expanded
+
+    * letter-spacing: espaçamento entre letras
+    * word-spacing: espacamento de palavras 
+    * line-height: Espaço entre linhas (pode ser por unidade ou sem unidade)
+    * text-transform:
+    lowercase, uppercase, (minuscula ou maiúscula)
+    capitalize (Cada palavra inicia com letra maiúscula)
+
+    * text-decoration: line, underline, overline, line-through
+                        none
+        atribuindo estilos - text-decoration: underline wave, dashed, dotted,
+                                                double e também cores
+     
+    * text-aling: center, left, right, justify
+    * text-shadow:
+        text-shadow: 1px 1px 1px red   
+                    offset-x, offset-y -blur e cor
+                    
+    * shorthand: italic normal bold normal 3em/1.5 Helvetica, Arial, Sans-serif
+                    style, variant, weight, streetch, size, line-heigth, font-family
+          
+    webfonts:
+    @import
+    @font-face
+    link
+    https://fonts.google.com 
+    
+     -->
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com Fontes</title>
+
+        <style>
+            h1{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                font-style: italic; 
+                /* font-stretch: condensed; */
+                 letter-spacing: 2.4rem;
+                word-spacing: 4rem;
+                text-transform: capitalize;
+                text-decoration: underline wavy green;
+                text-align: center;
+                text-shadow: 12px 20px 20px black;
+
+
+            }
+
+            h2{
+                color: blue;
+                line-height: 4rem;
+                
+                
+            }
+        </style>
+
+
+     </head>
+     <body>
+         <h1>Testando fontes</h1>
+         <h2>Outro teste de Fontes</h2>
+         
+     </body>
+     </html>

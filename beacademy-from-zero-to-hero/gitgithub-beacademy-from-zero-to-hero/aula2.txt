@@ -1,0 +1,5 @@
+1. Topo do site
+
+2. Menu Lateral
+
+3. Rodapé
